@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form( class="row" action="/", method="POST")
+   div(class="d-flex")
+    input(class="form-control mr-2" type="email", placeholder="Email")
+    button( class="btn btn-m btn-dark" type="submit") Submit
+
